@@ -101,10 +101,21 @@ struct Node {
 */
 class Solution{
     public:
-    // return true/false denoting whether the tree is Symmetric or not
+     
+    bool check(struct Node *root1, struct Node *root2){
+        if(root1==NULL && root2==NULL) return true;
+        if(!(root1 && root2)) return false;
+
+        if(root1->data!=root2->data) return false;
+        bool l=check(root1->left,root2->right);
+        bool r=check(root1->right,root2->left);
+        return l&&r;
+}
     bool isSymmetric(struct Node* root)
     {
 	    // Code here
+	    return check(root->left,root->right);
+
     }
 };
 
@@ -138,6 +149,20 @@ int main() {
 }
 
 /*
+
+bool check(TreeNode *root1, TreeNode *root2){
+        if(root1==NULL && root2==NULL) return true;
+        if(!(root1 && root2)) return false;
+
+        if(root1->val!=root2->val) return false;
+        bool l=check(root1->left,root2->right);
+        bool r=check(root1->right,root2->left);
+        return l&&r;
+}
+bool isSymmetric(TreeNode* root) {
+  return check(root->left,root->right);
+
+}
 
 
 */
