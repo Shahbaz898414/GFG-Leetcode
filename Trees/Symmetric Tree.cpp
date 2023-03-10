@@ -111,6 +111,7 @@ class Solution{
         bool r=check(root1->right,root2->left);
         return l&&r;
 }
+
     bool isSymmetric(struct Node* root)
     {
 	    // Code here
