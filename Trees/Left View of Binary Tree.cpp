@@ -111,10 +111,10 @@ void recursion(Node* root,int level,vector<int> & res){
   if(root==NULL)  return ;
   if(res.size()==level) {
      res.push_back(root->data);
-
+  }
     recursion(root->left,level+1,res);
     recursion(root->right,level+1,res);
-  }
+  
 }
 
 
@@ -130,3 +130,33 @@ vector<int> leftView(Node *root)
 
    return ans;
 }
+
+
+/*
+void solve(TreeNode* root, vector<int> &ans, int level)
+    {
+        // base case
+        if (root == NULL)
+        {
+            return ; 
+        }
+
+        // we entered a new level 
+        if (level == ans.size())
+        {
+            ans.push_back(root -> val) ; 
+        }
+
+        solve(root -> right, ans, level + 1) ; 
+        solve(root -> left, ans, level + 1 ) ; 
+    }
+    vector<int> rightSideView(TreeNode* root) {
+        vector<int> ans ; 
+        int level = 0 ; 
+
+        solve(root, ans, level) ;
+        
+        return ans ; 
+    }
+
+*/
