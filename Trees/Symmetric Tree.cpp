@@ -84,33 +84,21 @@ Node* buildTree(string str) {
     return root;
 }
 
-
-// } Driver Code Ends
-/*
-Structure of the node of the tree is as
-struct Node {
-    int data;
-    Node *left;
-    Node *right;
-
-    Node(int val) {
-        data = val;
-        left = right = NULL;
-    }
-};
-*/
-class Solution{
+  
+class Solution {
     public:
      
     bool check(struct Node *root1, struct Node *root2){
         if(root1==NULL && root2==NULL) return true;
-        if(!(root1 && root2)) return false;
+        // if(!(root1 && root2)) return false;
 
-        if(root1->data!=root2->data) return false;
+        if((root1 && root2) && (root1->data==root2->data)) return true;
         bool l=check(root1->left,root2->right);
         bool r=check(root1->right,root2->left);
         return l&&r;
-}
+
+        return false;
+    }
 
     bool isSymmetric(struct Node* root)
     {
