@@ -12,7 +12,7 @@ struct Node
 
 vector<int> leftView(struct Node *root);
 
-// Utility function to create a new Tree Node
+
 Node* newNode(int val)
 {
     Node* temp = new Node;
@@ -24,32 +24,27 @@ Node* newNode(int val)
 }
 
 
-// Function to Build Tree
+
 Node* buildTree(string str)
 {
     // Corner Case
     if(str.length() == 0 || str[0] == 'N')
         return NULL;
 
-    // Creating vector of strings from input
-    // string after spliting by space
     vector<string> ip;
 
     istringstream iss(str);
     for(string str; iss >> str; )
         ip.push_back(str);
 
-    // for(string i:ip)
-    //     cout<<i<<" ";
-    // cout<<endl;
-    // Create the root of the tree
+   
     Node* root = newNode(stoi(ip[0]));
 
     // Push the root to the queue
     queue<Node*> queue;
     queue.push(root);
 
-    // Starting from the second element
+   
     int i = 1;
     while(!queue.empty() && i < ip.size()) {
 
@@ -115,7 +110,7 @@ int main() {
 void recursion(Node* root,int level,vector<int> & res){
   if(root==NULL)  return ;
   if(res.size()==level) {
-    res.push_back(root->data);
+     res.push_back(root->data);
 
     recursion(root->left,level+1,res);
     recursion(root->right,level+1,res);
