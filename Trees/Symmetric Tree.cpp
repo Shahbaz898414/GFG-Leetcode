@@ -114,15 +114,13 @@ class Solution{
 
     bool isSymmetric(struct Node* root)
     {
-	    // Code here
+	    
 	    return check(root->left,root->right);
 
     }
 };
 
-//{ Driver Code Starts.
 
-/* Driver program to test size function*/
 
   
 
