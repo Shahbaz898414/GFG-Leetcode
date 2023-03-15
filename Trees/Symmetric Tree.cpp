@@ -116,9 +116,6 @@ class Solution{
     {
 	    
 	    return check(root,root);
-
-
-
     }
 };
 
