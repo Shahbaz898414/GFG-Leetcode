@@ -1,21 +1,18 @@
-//{ Driver Code Starts
-//Initial Template for C++
 
 #include<bits/stdc++.h>
 using namespace std;
 
 
-// } Driver Code Ends
-//User function Template for C++
+
 class Solution{
-    //Complete the function and return minimum number of operations
+   
     public:
     int specialPalindrome(string s1, string s2){
-        //Code Here
+     
     }
 };
 
-//{ Driver Code Starts.
+
 
 
 int main(){
