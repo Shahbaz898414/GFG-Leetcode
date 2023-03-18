@@ -115,7 +115,42 @@ int32_t main()
   cin >> t;
   while (t--)
   {
-    solve();
+    int n;cin>>n;
+
+    int arr[n];
+
+    int od=0,ev=0;
+
+    for (int i = 0; i < n; i++)
+    {
+      
+      cin>>arr[i];
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+      /* code */
+      if(arr[i]%2) od++;
+      else ev++;
+    }
+
+    if((od>ev) and od%2) cout<<"NO"<<endl;
+    else {
+      if(ev=0 and n%2){
+        cout<<"NO"<<endl;
+      }else{
+        if(od==ev)  cout<<"YES"<<endl;
+        else if(od==0) cout<<"YES"<<endl;
+        else if((od>ev) and od%2==0)  cout<<"YES"<<endl;
+        else if(ev>od and ev%2!=0 and od%2==0){
+          cout<<"YES"<<endl;
+        }else if(ev>od and ev%2==0 and od%2==1){
+            cout<<"NO"<<endl;
+        }
+      }
+    }
+    
+    
   }
   return 0;
 } // c8kbf and Tree
