@@ -119,16 +119,8 @@ int main() {
 // } Driver Code Ends
 
 
-/* Structure of Node
-struct Node
-{
-    int data;
-    Node* left;
-    Node* right;
-};*/
 
-/* The function should print all the paths from root
- to leaf nodes of the binary tree */
+
 void helper(Node* root,vector<int> arr,vector<vector<int>> &ans)
 {
     if(!root)
@@ -138,17 +130,23 @@ void helper(Node* root,vector<int> arr,vector<vector<int>> &ans)
     {
       
        ans.push_back(arr);
-       //after that we will return since we don't want to check after leaf node
+      
         return;
     }
-    /*recursively going left and right until we find the leaf and updating the arr
-    and ans vector simultaneously*/
+
     helper(root->left,arr,ans);
     helper(root->right,arr,ans);
 }
 
 vector<vector<int>> Paths(Node* root)
 {
-    // Code here
+     vector<vector<int>> ans;
+  
+    if(!root)
+        return ans;
+    vector<int> arr;
     
+    helper(root,arr,ans);
+  
+    return ans;
 }
