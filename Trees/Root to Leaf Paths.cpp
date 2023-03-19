@@ -116,7 +116,7 @@ int main() {
 
 
 
-// } Driver Code Ends
+
 
 
 
@@ -126,11 +126,8 @@ void helper(Node* root,vector<int> arr,vector<vector<int>> &ans)
     if(!root)
         return;
     arr.push_back(root->data);
-    if(root->left==NULL && root->right==NULL)
-    {
-      
+    if(root->left==NULL && root->right==NULL) {
        ans.push_back(arr);
-      
         return;
     }
 
