@@ -48,13 +48,12 @@ class Solution {
                 int m=i+row[k];
                 int n=j+col[k];
                 
-                if(m>=0 and n>=0 and m<N and n<M and !vis[m][n])
-                {
+                if(m>=0 and n>=0 and m<N and n<M and !vis[m][n]) {
+
                     q.push({{m,n},dis+1});
                     vis[m][n]=1;
                 }
             }
-            
         }
         
         return ans;
