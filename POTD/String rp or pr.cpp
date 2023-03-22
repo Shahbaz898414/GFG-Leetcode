@@ -82,9 +82,9 @@ public:
 
 
 int main() {
-  // int t;
-  // cin>>t;
-  // while(t--) {
+  int t;
+  cin>>t;
+  while(t--) {
       int X,Y;
       cin>>X>>Y;
       string S;
@@ -92,5 +92,5 @@ int main() {
       Solution obj;
       long long answer=obj.solve(X,Y,S);
       cout<<answer<<endl;
-  // }
+  }
 }
