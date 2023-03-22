@@ -70,8 +70,7 @@ public:
               ans+=Y;
               st.pop();
           }
-          else
-          {
+          else {
               st.push(S[i]);
           }
       }
