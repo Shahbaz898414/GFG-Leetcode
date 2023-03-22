@@ -66,7 +66,7 @@ public:
               st.push(S[i]);
           }
           else if(S[i]==b[1] and st.top()==b[0])
-          {
+        {
               ans+=Y;
               st.pop();
           }
