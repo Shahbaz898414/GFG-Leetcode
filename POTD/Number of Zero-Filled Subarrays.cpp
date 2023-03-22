@@ -8,16 +8,23 @@ using namespace std;
         long long counter = 0;
         for(int i = 0;i<nums.size();i++){
             if(nums[i]==0){
-                counter++;
+              counter++;
             }else{
-                res+=(counter*(counter+1))/2;
-                counter = 0;
+              cout<<counter<<" ";
+              res+=(counter*(counter+1))/2;
+              counter = 0;
             }
         }
+
+        // cout<<endl;
         if(counter){
+
+           cout<<counter<<" ";
             res+=(counter*(counter+1))/2;
             counter = 0;
         }
+
+        cout<<endl;
         return res;
     }
 // };
@@ -26,12 +33,14 @@ int main(){
   int n;cin>>n;
 
 
-  vector<int> v;
+  vector<int> v(n);
 
   for (int i = 0; i < n; i++) {
     cin>>v[i];
     
   }
+
+
 
   cout<<zeroFilledSubarray(v)<<endl;
   
