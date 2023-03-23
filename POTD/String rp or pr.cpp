@@ -91,6 +91,7 @@ int main() {
       cin>>S;
       Solution obj;
       long long answer=obj.solve(X,Y,S);
+      
       cout<<answer<<endl;
   }
 }
