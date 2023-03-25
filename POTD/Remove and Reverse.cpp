@@ -1,5 +1,4 @@
-//{ Driver Code Starts
-//Initial Template for C++
+
 
 
 #include<bits/stdc++.h>
@@ -14,7 +13,9 @@ class Solution {
     }
 };
 
-//{ Driver Code Starts.
+
+
+
 int main() {
     int t;
     cin >> t;
@@ -26,4 +27,3 @@ int main() {
         cout<<ans<<endl;
     }
 }
-// } Driver Code Ends
