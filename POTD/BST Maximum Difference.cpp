@@ -3,7 +3,6 @@
 using namespace std;
 
 
-// Tree Node
 struct Node {
     int data;
     Node *right;

@@ -19,6 +19,8 @@ int32_t main(void)
       continue;
     }
 
+    cout<<"shahabz"<<endl;
+
    int hcf = m;
     int temp = c;
     
