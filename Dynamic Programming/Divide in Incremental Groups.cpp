@@ -10,6 +10,7 @@ class Solution {
   public:
     int countWaystoDivide(int N, int K) {
         // Code here
+        
     }
 };
 
