@@ -9,8 +9,8 @@ using namespace std;
 class Solution {
   public:
     int countWaystoDivide(int N, int K) {
-        // Code here
-        
+  
+
     }
 };
 
