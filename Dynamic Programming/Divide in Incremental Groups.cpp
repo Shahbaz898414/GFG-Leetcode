@@ -1,12 +1,5 @@
-
-
 #include<bits/stdc++.h>
 using namespace std;
-
-
-
-
-// User function Template for C++
 
 class Solution {
   public:
@@ -22,8 +15,7 @@ class Solution {
             return 0;
         }
         
-        if(sum_left==0)
-        {
+        if(sum_left==0) {
             return 0;
         }
         if(dp[sum_left][prev][count]!=-1)return dp[sum_left][prev][count];
