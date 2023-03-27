@@ -20,8 +20,7 @@ class Solution {
         
         
         int ways=0;
-        for(int i=prev; i<=sum_left; i++)
-        {
+        for(int i=prev; i<=sum_left; i++) {
             ways+=solve(sum_left-i,count-1,i);
         }
         
