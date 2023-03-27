@@ -6,10 +6,8 @@ class Solution {
     vector<vector<vector<int>>>dp;
     int solve(int sum_left, int count, int prev)
     {
-        if(count==0)
-        {
-            if(sum_left==0)
-            {
+        if(count==0) {
+            if(sum_left==0) {
                 return 1;
             }
             return 0;
