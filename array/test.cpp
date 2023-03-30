@@ -2,12 +2,9 @@
 using namespace std;
 #define ll long long
     
-    bool isValidSudoku(vector<vector<char> > &board) {
-		
+    bool isValidSudoku(vector<vector<char> > &board) {	
         int row[9][9] = {0}, col[9][9] = {0}, grid_3x3[9][9] = {0}; 
-        
         for(int i = 0; i < board.size(); i++)
-        
           for(int j = 0; j < board[i].size(); j++)
                 if(board[i][j] != '.') {
                     int num = board[i][j] - '1', k = i/3*3+j/3; 
