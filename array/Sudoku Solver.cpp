@@ -41,11 +41,7 @@ void solveSudoku(vector<vector<char>>& board) {
         solve(board);        
 }
 
-
-
-int main(){
-   
-        
+int main(){      
         int N;
         scanf("%d",&N);
         
