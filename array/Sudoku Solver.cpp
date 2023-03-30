@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
-
 bool isSafe(int row,int col,char &c,vector<vector<char>>& board){
         for(int i=0;i<9;i++){
             if(board[i][col]==c) 
