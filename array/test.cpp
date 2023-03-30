@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long
-
-
     
     bool isValidSudoku(vector<vector<char> > &board) {
 		
@@ -14,6 +12,7 @@ using namespace std;
                     int num = board[i][j] - '1', k = i/3*3+j/3; 
                     if(row[i][num] || col[j][num] || grid_3x3[k][num])
                         return false;
+                        
                     row[i][num] = col[j][num] = grid_3x3[k][num] = 1;
                 }
         
@@ -39,13 +38,9 @@ using namespace std;
 
 
 int main() {
-
  
     int n;cin>>n;
     string s1,s2;cin>>s1>>s2; 
     
-
-
-  
   
 }
