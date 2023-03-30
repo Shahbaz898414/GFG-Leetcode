@@ -18,7 +18,7 @@ int main() {
 
   while(l<=r) {
     ans=max(ans,min(a[l],a[r])*(r-l));
-    cout<<ans<<" ";
+    cout<<ans<<" "<<a[l]<< " "<<a[r]<<endl;
 
     if(a[l]>=a[r]) r--;
     else l++;
