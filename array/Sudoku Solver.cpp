@@ -2,30 +2,6 @@
 using namespace std;
 
 
-class Array
-{
-public:
-    template <class T>
-    static void input(vector<T> &A,int n)
-    {
-        for (int i = 0; i < n; i++)
-        {
-            scanf("%d ",&A[i]);
-        }
-    }
-
-    template <class T>
-    static void print(vector<T> &A)
-    {
-        for (int i = 0; i < A.size(); i++)
-        {
-            cout << A[i] << " ";
-        }
-        cout << endl;
-    }
-};
-
-
 
 bool isSafe(int row,int col,char &c,vector<vector<char>>& board){
         for(int i=0;i<9;i++){
