@@ -16,8 +16,8 @@ public:
                 {
                     int d = board[i][j], b = (i/3)*3+j/3;
                     if (!rows[i].emplace(d).second) return false;   
-                    if (!cols[j].emplace(d).second) return false;   // [2] test columns
-                    if (!blck[b].emplace(d).second) return false;   // [3] test blocks
+                    if (!cols[j].emplace(d).second) return false;  
+                    if (!blck[b].emplace(d).second) return false;   
                 }
         return true;
     }
