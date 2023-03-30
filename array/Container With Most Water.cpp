@@ -16,12 +16,15 @@ int main() {
 
   ll l=0,r=n-1;
 
-  while(l<=r){
-    ans=mx(ans,min(a[l],a[r])*(r-l));
+  while(l<=r) {
+    ans=max(ans,min(a[l],a[r])*(r-l));
+    cout<<ans<<" ";
 
     if(a[l]>=a[r]) r--;
     else l++;
   }
+
+  cout<<endl;
 
   cout<<ans<<endl;
 
