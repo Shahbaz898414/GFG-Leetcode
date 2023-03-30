@@ -2,9 +2,7 @@
 using namespace std;
 #define ll long long
 
-class Solution
-{
-public:
+
     
     bool isValidSudoku(vector<vector<char> > &board)
     {
@@ -22,12 +20,10 @@ public:
         
         return true;
     }
-};
 
 
-class Solution 
-{
-public:
+
+
     bool isValidSudoku(vector<vector<char>>& board) 
     {
         vector<set<char>> rows(9), cols(9), blck(9);                
@@ -43,7 +39,7 @@ public:
                 }
         return true;
     }
-};
+
 
 int main() {
 
