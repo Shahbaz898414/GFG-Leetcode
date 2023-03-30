@@ -14,20 +14,23 @@ bool isSafe(int row,int col,char &c,vector<vector<char>>& board){
 }
 
 bool solve(vector<vector<char>>& board){
-        for(int i=0;i<9;i++){ // Traversal through each element in 9*9 Sudoku
+        for(int i=0;i<9;i++){ 
+          // Traversal through each element in 9*9 Sudoku
             for(int j=0;j<9;j++){
                 if(board[i][j]=='.'){
                     for(char c='1';c<='9';c++){
-                        if(isSafe(i,j,c,board)==true){ //Checking whether 1-9 which numbers sets the 3 Sudoku Criteria
+                        if(isSafe(i,j,c,board)==true){ 
+                          //Checking whether 1-9 which numbers sets the 3 Sudoku Criteria
                             board[i][j]=c;
-                            if(solve(board)==true) //Condition Checking
+                            if(solve(board)==true) 
+                            //Condition Checking
                                 return true;
                             else
                                 board[i][j]='.';
                         }
                     }
                     return false;
-                    
+
                 }
             }
         }
