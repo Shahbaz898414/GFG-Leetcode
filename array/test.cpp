@@ -10,7 +10,7 @@ using namespace std;
         int row[9][9] = {0}, col[9][9] = {0}, grid_3x3[9][9] = {0}; 
         
         for(int i = 0; i < board.size(); i++)
-            for(int j = 0; j < board[i].size(); j++)
+          for(int j = 0; j < board[i].size(); j++)
                 if(board[i][j] != '.') {
                     int num = board[i][j] - '1', k = i/3*3+j/3; 
                     if(row[i][num] || col[j][num] || grid_3x3[k][num])
@@ -24,14 +24,12 @@ using namespace std;
 
 
 
-    bool isValidSudoku(vector<vector<char>>& board) 
-    {
+    bool isValidSudoku(vector<vector<char>>& board)  {
         vector<set<char>> rows(9), cols(9), blck(9);                
         
         for (int i = 0; i < 9; i++) 
             for (int j = 0; j < 9; j++) 
-                if (board[i][j] != '.')
-                {
+                if (board[i][j] != '.') {
                     int d = board[i][j], b = (i/3)*3+j/3;
                     if (!rows[i].emplace(d).second) return false;   
                     if (!cols[j].emplace(d).second) return false;  
