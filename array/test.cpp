@@ -4,8 +4,7 @@ using namespace std;
 
 
     
-    bool isValidSudoku(vector<vector<char> > &board)
-    {
+    bool isValidSudoku(vector<vector<char> > &board) {
 		
         int row[9][9] = {0}, col[9][9] = {0}, grid_3x3[9][9] = {0}; 
         
