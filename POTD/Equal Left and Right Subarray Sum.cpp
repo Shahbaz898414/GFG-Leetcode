@@ -37,7 +37,7 @@ class Solution {
         
         if(N%2==0)  return -1;
         
-        if(N==1)  return 1;
+        if(n==1)  return 1;
         
         int sum1=0,sum2=0;
 
