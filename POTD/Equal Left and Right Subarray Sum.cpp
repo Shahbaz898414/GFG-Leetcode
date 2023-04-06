@@ -37,6 +37,12 @@ class Solution {
         }
 
         for(int i=0;i<n;i++){
+          cout<<v[i]<< " ";
+        }
+
+        cout<<endl;
+
+        for(int i=0;i<n;i++){
           if(v[i-1]+v[i]==v[n-1]) return i+1;
         }
 
