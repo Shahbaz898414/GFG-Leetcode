@@ -32,42 +32,15 @@ class Solution {
   public:
     int equalSum(int n, vector<int> &v) {
         
-        
-        // int l=0,r=N-1;
-        
-        if(N%2==0)  return -1;
-        
-        if(n==1)  return 1;
-        
-        int sum1=0,sum2=0;
-
-        for(int i=0;i<n/2;i++){
-          sum1+=v[i];
+        for(int i=1;i<n;i++){
+          v[i]+=v[i-1];
         }
 
-        for(int i=n/2+1;i<n;i++){
-          sum2+=v[i];
+        for(int i=0;i<n;i++){
+          if(v[i-1]+v[i]==v[n-1]) return i+1;
         }
 
-        if(sum1==sum2) {
-          return  (n+1)/2;
-        }
-
-        return -1;
-        
-        // while(l<r) {
-        //    sum1+=A[l];
-        //    sum2+=A[r];
-        //    cout<<sum1<< " "<<sum2<<endl;
-        //    if(sum1==sum2){
-        //        return l+=2;
-        //    }
-        //    l++;
-        //    r--;
-        // }
-        
-        // return -1;
-    
+        return -1;  
     }
     
 };
