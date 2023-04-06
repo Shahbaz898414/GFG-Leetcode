@@ -28,7 +28,7 @@ class Solution {
     }
     
     int countWaystoDivide(int N, int K) {
-        // Code here
+       
         dp=vector<vector<vector<int>>>(N+1,vector<vector<int>>(N+1,vector<int>(K+1,-1)));
         return solve(N, K, 1 );
     }
