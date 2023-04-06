@@ -29,8 +29,6 @@ Node *insert(Node *tree, int val) {
 }
 
 
-// } Driver Code Ends
-//User function Template for C++
 
 class Solution{
 public:
