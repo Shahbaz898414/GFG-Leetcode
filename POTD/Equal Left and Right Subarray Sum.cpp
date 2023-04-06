@@ -58,12 +58,12 @@ class Solution {
 };
 
 
-//{ Driver Code Starts.
+
 
 int main(){
-    int t;
-    scanf("%d ",&t);
-    while(t--){
+    // int t;
+    // scanf("%d ",&t);
+    // while(t--){
         
         int N; 
         scanf("%d",&N);
@@ -77,7 +77,6 @@ int main(){
         
         cout<<res<<endl;
         
-    }
+    // }
 }
 
-// } Driver Code Ends
