@@ -9,19 +9,18 @@ using namespace std;
 
 class Solution{   
 public:
-    int addMinChar(string str){    
-        //code here
-
+    int addMinChar(string str){     
         string s;
         s=str;
-
         reverse(s.begin(),s.end());
 
-        if(str==s){
+        if(str==s) {
           return 0;
         }
 
         
+
+
         
     }
 };
