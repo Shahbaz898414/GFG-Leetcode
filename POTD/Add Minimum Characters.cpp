@@ -11,6 +11,17 @@ class Solution{
 public:
     int addMinChar(string str){    
         //code here
+
+        string s;
+        s=str;
+
+        reverse(s.begin(),s.end());
+
+        if(str==s){
+          return 0;
+        }
+
+        
         
     }
 };
