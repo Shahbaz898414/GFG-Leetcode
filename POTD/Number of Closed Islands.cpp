@@ -8,19 +8,19 @@ class Solution {
 public:
 
 
- void dfs(int i,int j,int n,int m,vector<vector<int>> &grid) {
-    grid[i][j]=1;
+    void dfs(int i,int j,int n,int m,vector<vector<int>> &grid) {
+        grid[i][j]=1;
 
-    int ax[4]= {1,-1,0,0};
-    int ay[4]={0,0,1,-1};
+        int ax[4]= {1,-1,0,0};
+        int ay[4]={0,0,1,-1};
 
-    for(int k=0;k<4;k++) {
-      int nx=i+ax[k];
-      int ny=j+ay[k];
+        for(int k=0;k<4;k++) {
+          int nx=i+ax[k];
+          int ny=j+ay[k];
 
-      
+          
+        }
     }
- }
     
     int closedIsland(vector<vector<int>>& grid) {
         int n=grid.size();
